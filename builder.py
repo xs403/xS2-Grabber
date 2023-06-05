@@ -97,9 +97,9 @@ class MakeEnv:
         Clones the source code from a specified repository into the build directory
         """
         subprocess.run(
-            ['git', 'clone', 'https://github.com/xs403/xS2'], cwd=self.build_dir, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            ['git', 'clone', 'https://github.com/xs403/xS2-Grabber'], cwd=self.build_dir, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         shutil.move(os.path.join(self.build_dir,
-                    'xS2', 'src'), self.build_dir)
+                    'xS2-Grabber', 'src'), self.build_dir)
 
 
 class WriteConfig:
